@@ -1,3 +1,3 @@
-# Coming Soon!
+# Hi there!
 
-Visit https://paolomandica.github.io/
+You can visit https://paolomandica.github.io/ to know more about me!
