@@ -1,116 +1,160 @@
 /* Global styles */
 body {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    color: #1772d0;
-    text-decoration: none;
-  }
-  
-  a:hover,
-  a:focus {
-    color: #f09228;
-    text-decoration: none;
-  }
-  
-  p {
-    margin: 0 0 1.5rem;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  /* Specific styles for elements */
-  name {
-    display: block;
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  sup {
-    font-size: 0.6em;
-    vertical-align: baseline;
-  }
-  
-  papertitle {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-  }
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
 
-  teachingtitle {
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #f09228;
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Specific styles for elements */
+name {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+sup {
+  font-size: 0.6em;
+  vertical-align: baseline;
+}
+
+papertitle {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+teachingtitle {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+#paper_img {
+  width: 200px;
+  border-radius: 0;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+/* Styles for the main container */
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Styles for the header */
+header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Styles for the main content area */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main__content {
+  flex-basis: 67%;
+  margin-right: 3%;
+}
+
+.main__image {
+  flex-basis: 28%;
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles for smaller screens */
+  .container {
+  max-width: 100%;
+  padding: 0 15px;
+  }
+  
+  .main {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .main__content,
+  .main__image {
+  flex-basis: 100%;
+  margin-right: 0;
+  margin-bottom: 2rem;
   }
   
   #paper_img {
-    width: 200px;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 1.5rem;
   }
   
-  .fade {
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
+  .profile-pic {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 60%;
+  height: auto;
   }
   
-  span.highlight {
-    background-color: #ffffd0;
+  .research {
+  flex-direction: column-reverse;
   }
   
-  /* Styles for the main container */
-  .container {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 30px;
+  .research img {
+  width: 100%;
+  }
   }
   
-  /* Styles for the header */
-  header {
-    margin-bottom: 3rem;
-    text-align: center;
+  @media only screen and (min-width: 600px) {
+  .profile-pic {
+  float: right;
+  max-width: 40%;
+  margin: 0 0 20px 20px;
+  height: auto;
   }
   
-  /* Styles for the main content area */
-  .main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  #paper_img {
+  float: left;
+  margin: 0 20px 20px 0;
+  }
   }
   
-  .main__content {
-    flex-basis: 67%;
-    margin-right: 3%;
-  }
-  
-  .main__image {
-    flex-basis: 28%;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .main {
-      flex-direction: column;
-    }
-  
-    .main__content,
-    .main__image {
-      flex-basis: 100%;
-      margin-right: 0;
-      margin-bottom: 2rem;
-    }
-  }
-  
-  heading {
-    font-size: 24px;
-    font-weight: 500;
-  }
+heading {
+  font-size: 24px;
+  font-weight: 500;
+}
