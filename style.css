@@ -33,19 +33,13 @@ img {
 /* Specific styles for elements */
 name {
   display: block;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
 sup {
   font-size: 0.6em;
   vertical-align: baseline;
-}
-
-papertitle {
-  font-size: 1.2em;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
 }
 
 teachingtitle {
@@ -55,25 +49,14 @@ teachingtitle {
 }
 
 #paper_img {
-  width: 200px;
+  width: 300px;
+  height: auto;
   border-radius: 0;
-}
-
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  display: block;
 }
 
 span.highlight {
   background-color: #ffffd0;
-}
-
-/* Styles for the main container */
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 30px;
 }
 
 /* Styles for the header */
@@ -82,79 +65,46 @@ header {
   text-align: center;
 }
 
-/* Styles for the main content area */
-.main {
+.research {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.main__content {
-  flex-basis: 67%;
-  margin-right: 3%;
-}
-
-.main__image {
-  flex-basis: 28%;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  padding: 10px;
+  
 }
 
 @media screen and (max-width: 768px) {
-  /* Styles for smaller screens */
-  .container {
-  max-width: 100%;
-  padding: 0 15px;
-  }
-  
-  .main {
-  flex-direction: column;
-  align-items: center;
-  }
-  
-  .main__content,
-  .main__image {
-  flex-basis: 100%;
-  margin-right: 0;
-  margin-bottom: 2rem;
-  }
-  
+
   #paper_img {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto 1.5rem;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1.5rem;
   }
-  
+
   .profile-pic {
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 60%;
-  height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 60%;
+    height: auto;
   }
-  
+
   .research {
-  flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
-  
-  .research img {
-  width: 100%;
-  }
-  }
-  
-  @media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) {
   .profile-pic {
-  float: right;
-  max-width: 40%;
-  margin: 0 0 20px 20px;
-  height: auto;
+    float: right;
+    max-width: 40%;
+    margin: 0 0 20px 20px;
+    height: auto;
   }
-  
+
   #paper_img {
-  float: left;
-  margin: 0 20px 20px 0;
+    float: left;
+    margin: 0 20px 20px 0;
   }
-  }
-  
-heading {
-  font-size: 24px;
-  font-weight: 500;
 }
