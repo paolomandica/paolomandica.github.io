@@ -1,17 +1,20 @@
 /* Global styles */
 body {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   color: #333;
   background-color: #f8f8f8;
-  margin: 0;
+  margin: 2rem 1.2rem;
   padding: 0;
 }
 
 a {
-  color: #1772d0;
+  /* color: #1772d0; */
+  color: #000;
+  border-bottom: 1px dotted #000;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover,
@@ -19,6 +22,10 @@ a:focus {
   color: #f09228;
   text-decoration: none;
 }
+
+/* a:visited {
+  color: darkgoldenrod;
+} */
 
 p {
   margin: 0 0 1.5rem;
@@ -31,28 +38,37 @@ img {
 }
 
 /* Specific styles for elements */
-name {
+
+#name {
   display: block;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+  /* adjust as needed */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px #666;
+  /* add a subtle text shadow effect */
+}
+
+#name span {
+  font-size: 4rem;
+  /* adjust as needed */
+}
+
+#profile-pic {
+  display: flex;
+  margin: auto 20px;
+  width: 30%;
+  height: auto;
+  float: right;
 }
 
 sup {
   font-size: 0.6em;
   vertical-align: baseline;
-}
-
-teachingtitle {
-  font-size: 1em;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-#paper_img {
-  width: 300px;
-  height: auto;
-  border-radius: 0;
-  display: block;
 }
 
 span.highlight {
@@ -65,46 +81,45 @@ header {
   text-align: center;
 }
 
-.research {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 100%;
-  padding: 10px;
-  
+.section {
+  max-width: 960px;
+  margin: 2rem auto;
+}
+
+.paper-title,
+.activity-title {
+  /* font-size: 1.15rem; */
+  font-weight: bold;
+  border-bottom: 1px dotted #000;
+  color: #000;
+}
+
+sm {
+  color: rgb(85, 85, 85);
+}
+
+.paper-links a:link {
+  color: aqua;
+  font-weight: normal;
+}
+
+footer {
+  text-align: right;
+  font-size: 0.8rem;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 768px) {
 
-  #paper_img {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto 1.5rem;
+  body {
+    font-size: 16px;
   }
 
-  .profile-pic {
-    display: block;
-    margin: 0 auto 20px;
-    max-width: 60%;
+  #profile-pic {
+    margin: 30px auto;
+    width: 60%;
     height: auto;
+    float: none;
   }
 
-  .research {
-    flex-direction: column-reverse;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .profile-pic {
-    float: right;
-    max-width: 40%;
-    margin: 0 0 20px 20px;
-    height: auto;
-  }
-
-  #paper_img {
-    float: left;
-    margin: 0 20px 20px 0;
-  }
 }
