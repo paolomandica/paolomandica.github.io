@@ -46,6 +46,10 @@ nav ul li a {
   border-bottom: none;
 }
 
+.research li{
+  margin: 10px 0;
+}
+
 a {
   /* color: #1772d0; */
   color: #000;
