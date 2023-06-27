@@ -79,6 +79,16 @@ img {
 
 /* Specific styles for elements */
 
+#location {
+  display: flex;
+  align-items: center;
+}
+
+#location-icon {
+  height: 20pt;
+  margin-right: 10px; /* Adjust the spacing as needed */
+}
+
 #name {
   font-size: 1.5rem;
   font-weight: 700;
