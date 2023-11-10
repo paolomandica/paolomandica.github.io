@@ -14,22 +14,25 @@
 
 <body>
   <!-- NAVBAR -->
-  <header class="section">
-    <p id="name" style="text-align: center;">Paolo Mandica</p>
+  <header class="section sticky">
+    <a id="name" href="index.html" target="_self">Paolo Mandica</a>
     <nav>
       <ul>
-        <li style="background-color: rgba(211, 211, 211, 0.582);"><a target="_self" href="index.html">About</a></li>
-        <li><a target="_self" href="photos.html">Photos</a></li>
+        <a target="_self" href="#about_me"><li>About me</li></a>
+        <a target="_self" href="#research"><li>Research</li></a>
+        <a target="_self" href="#activities"><li>Activities</li></a>
+        <!-- <li><a target="_self" href="#about_me">About me</a></li>
+        <li><a target="_self" href="#research">Research</a></li>
+        <li><a target="_self" href="#activities">Activities</a></li> -->
       </ul>
     </nav>
   </header>
 
   <!-- INTRO -->
   <!-- <p id="name" style="text-align: center;">Paolo Mandica</p> -->
-  <div class="section">
-    <p id="location"> <img src="images/location.avif" id="location-icon">Rome, Italy</p>
-    <img src="images/profile_pic.png" id="profile-pic">
+  <div class="section" id="about_me">
     <h2>About Me</h2>
+    <img src="images/profile_pic.png" id="profile-pic">
     <p>I am a doctoral student at the <a href="https://www.pinlab.org/">Perception and Intelligence Lab</a> at Sapienza University of Rome,
       Italy, under the guidance of <a href="https://fgalasso.bitbucket.io/">Prof. Fabio Galasso</a>.
       My research centers on deep learning and computer vision, with focus on self-supervised, unsupervised, and active learning leveraging hyperbolic neural networks.</p>
@@ -55,7 +58,7 @@
   </div>
 
   <!-- RESEARCH -->
-  <div class="section research">
+  <div class="section research" id="research">
     <h2>Research</h2>
     <ul>
       <li>
@@ -88,7 +91,7 @@
 
 
   <!-- ACTIVITIES -->
-  <div class="section">
+  <div class="section" id="activities">
     <h2>Activities</h2>
     <p style="margin-bottom: -10px;">I have been a teaching assistant for the following courses:</p>
     <ul>

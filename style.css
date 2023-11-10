@@ -13,35 +13,43 @@ body {
 header {
   display: flex;
   background-color: #f8f8f8;
-  /* justify-content:space-between; */
-  align-items:center; 
-  /* padding-bottom: 1.5rem;  */
   border-bottom: #000 1px solid;
 }
 
-/* nav {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-} */
+#name {
+  font-size: 2.0rem;
+  font-weight: 700;
+  color: #444;
+  text-align: center;
+  margin: auto 0;
+  margin-right: auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px #666;
+  border-bottom: none;
+}
+
+#name:hover {
+  color: #f09228;
+}
 
 nav ul {
   list-style: none;
   display: flex;
-  padding-left: 2rem;
+  flex-direction: row;
+  margin: 5px auto;
 }
 
 nav ul li {
-  /* margin: 0 5px; */
+  margin: 0 5px;
   padding: 0.5rem;
-  width: 70px;
   text-align: center;
 }
 
-nav ul li a {
+nav ul a {
   text-decoration: none;
-  color: #333;
-  font-size: 18px;
+  color: #444;
+  font-size: 22px;
   font-weight: bold;
   border-bottom: none;
 }
@@ -87,17 +95,6 @@ img {
 #location-icon {
   height: 20pt;
   margin-right: 10px; /* Adjust the spacing as needed */
-}
-
-#name {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #333;
-  text-align: center;
-  margin: auto 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px #666;
 }
 
 #profile-pic {
@@ -192,7 +189,7 @@ footer {
 @media screen and (max-width: 768px) {
 
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   header {
@@ -202,15 +199,21 @@ footer {
   nav ul {
     list-style: none;
     display: block;
-    padding-left: 0;
+    padding: 8px 0;
   }
 
   nav ul li {
     margin: 8px auto;
+    border: #000 2px solid;
+  }
+
+  ul li:hover {
+    border-color: #f09228;
   }
 
   #name {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
+    margin-right: 0;
   }
 
   #profile-pic {
