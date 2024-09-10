@@ -33,6 +33,11 @@ header {
   color: #f09228;
 }
 
+.slide-up:hover {
+  transform: translateY(-10%);
+  transition: transform 0.3s ease;
+}
+
 nav ul {
   list-style: none;
   display: flex;
