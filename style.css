@@ -226,6 +226,10 @@ footer {
   color: #666;
 }
 
+#updates ul li {
+  margin-bottom: 5px;
+}
+
 /* Smartphone view */
 
 @media screen and (max-width: 768px) {
