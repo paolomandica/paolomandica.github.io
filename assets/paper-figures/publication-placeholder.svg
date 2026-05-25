@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">Publication Placeholder</title>
+  <desc id="desc">Placeholder thumbnail for research publication previews.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dbe7ff" />
+      <stop offset="100%" stop-color="#e7f7ec" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" />
+  <rect x="52" y="52" width="696" height="396" rx="24" fill="#ffffff" fill-opacity="0.78" />
+  <rect x="104" y="138" width="592" height="26" rx="13" fill="#b8c6e6" />
+  <rect x="104" y="198" width="516" height="20" rx="10" fill="#c7d4ef" />
+  <rect x="104" y="244" width="452" height="20" rx="10" fill="#c7d4ef" />
+  <rect x="104" y="332" width="200" height="42" rx="21" fill="#90a9dc" />
+</svg>
