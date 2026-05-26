@@ -1,0 +1,1 @@
+This personal website must stay intentionally minimal: use only plain HTML and CSS, avoid frameworks, build tools, or dependencies, and prioritize fast loading, simple structure, and easy long-term maintenance.

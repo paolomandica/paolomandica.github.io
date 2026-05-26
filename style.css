@@ -209,6 +209,32 @@ p {
   gap: var(--s3);
 }
 
+.paper-archive {
+  margin-top: var(--s3);
+}
+
+.paper-archive summary {
+  cursor: pointer;
+  color: #374151;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #8b94a3;
+  text-underline-offset: 0.14em;
+}
+
+.paper-archive[open] summary {
+  margin-bottom: var(--s3);
+}
+
+.paper-archive summary:hover {
+  color: #1f2937;
+  text-decoration-color: #4b5563;
+}
+
+.paper-list-archive {
+  margin-top: 0;
+}
+
 .paper-item {
   display: grid;
   grid-template-columns: 146px 1fr;
