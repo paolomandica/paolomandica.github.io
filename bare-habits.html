@@ -6,81 +6,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bare Habits Support</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,800&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="assets/bare-habits/app-icon.png"/>
+  <link rel="icon" type="image/png" href="assets/bare-habits/app-icon.png">
 </head>
 
 <body class="bare-habits-body">
-  <!-- <header class="section sticky">
-    <a class="slide-up" id="name" href="index.html" target="_self">Paolo Mandica</a>
-    <nav>
-      <ul>
-        <a class="slide-up" target="_self" href="index.html"><li>Home</li></a>
-        <a class="slide-up" target="_self" href="updates.html"><li>Updates</li></a>
-      </ul>
-    </nav>
-  </header> -->
-
-  <div class="section">
-    <div class="bare-habits-header">
-      <img src="assets/bare-habits/app-icon.png" alt="Bare Habits Icon" class="app-icon-small">
-      <h1>Bare Habits</h1>
-      <h3>Focus on What Matters.</h3>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a id="name" href="index.html" target="_self">Paolo Mandica</a>
+      <nav>
+        <ul>
+          <li><a target="_self" href="index.html">Home</a></li>
+          <li><a target="_self" href="updates.html">Updates</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div class="glass-card">
-      <p>
-        Build better habits, one day at a time, without the clutter. <b>Bare Habits</b> is a clean, focused habit tracker designed for those who value simplicity and consistency. No distractions, just your progress.
+  <main class="container bare-habits-page">
+    <section class="section section-card bare-habits-hero">
+      <div class="bare-habits-header">
+        <img src="assets/bare-habits/app-icon.png" alt="Bare Habits Icon" class="app-icon-small">
+        <div>
+          <p class="bare-habits-eyebrow">iOS App</p>
+          <h1>Bare Habits</h1>
+          <p class="bare-habits-subtitle">Focus on what matters.</p>
+        </div>
+      </div>
+      <p class="bare-habits-lede">
+        Build better habits, one day at a time, without the clutter. <strong>Bare Habits</strong> is a clean,
+        focused habit tracker for people who value simplicity, consistency, and calm progress.
       </p>
+      <div class="screenshot-gallery" aria-label="Bare Habits screenshots">
+        <img src="assets/bare-habits/Frame 1.png" alt="Bare Habits daily tracking screen">
+        <img src="assets/bare-habits/Frame 2.png" alt="Bare Habits weekly overview screen">
+        <img src="assets/bare-habits/Frame 3.png" alt="Bare Habits habit details screen">
+        <img src="assets/bare-habits/Frame 4.png" alt="Bare Habits settings and reminders screen">
+      </div>
+    </section>
 
-      <div class="screenshot-gallery">
-        <img src="assets/bare-habits/Frame 1.png" alt="Bare Habits Screenshot 1">
-        <img src="assets/bare-habits/Frame 2.png" alt="Bare Habits Screenshot 2">
-        <img src="assets/bare-habits/Frame 3.png" alt="Bare Habits Screenshot 3">
-        <img src="assets/bare-habits/Frame 4.png" alt="Bare Habits Screenshot 4">
-      </div>
-    </div>
+    <section class="section feature-grid" aria-label="Bare Habits features">
+      <article class="section-card feature-item">
+        <h3>Daily Focus</h3>
+        <p>Check off your habits with a single tap. The 7-day flow keeps attention on today while making it easy to catch up on recent progress.</p>
+      </article>
+      <article class="section-card feature-item">
+        <h3>Weekly Overview</h3>
+        <p>See the bigger picture at a glance. The weekly view helps you understand consistency across all your habits without adding noise.</p>
+      </article>
+      <article class="section-card feature-item">
+        <h3>Insightful Stats</h3>
+        <p>Track streaks and completion rates clearly with lightweight charts that stay useful without taking over the experience.</p>
+      </article>
+      <article class="section-card feature-item">
+        <h3>Daily Reminders</h3>
+        <p>Set a reminder at your preferred time so the app supports your routine quietly, rather than competing for attention.</p>
+      </article>
+    </section>
 
-    <div class="feature-grid">
-      <div class="glass-card feature-item">
-        <h3>✨ Daily Focus</h3>
-        <p>Check off your habits with a single tap. An elegant 7-day navigation keeps you oriented and focused on today, while making it easy to catch up on recent progress.</p>
-      </div>
-      <div class="glass-card feature-item">
-        <h3>📅 Weekly Overview</h3>
-        <p>See the big picture. The comprehensive weekly view helps you visualize your consistency across all your habits simultaneously.</p>
-      </div>
-      <div class="glass-card feature-item">
-        <h3>📊 Insightful Stats</h3>
-        <p>Track your journey with clarity. Monitor your streaks and completion rates at a glance with beautiful, non-intrusive charts.</p>
-      </div>
-      <div class="glass-card feature-item">
-        <h3>🔔 Daily Reminders</h3>
-        <p>Stay on track without the stress. Set a custom daily reminder at your preferred time to ensure you never miss a beat in your habit-building journey.</p>
-      </div>
-    </div>
-
-    <div class="glass-card">
-      <h3>🎨 Refined Experience</h3>
-      <ul>
-        <li><b>Minimalist Aesthetic</b>: A design that breathes, letting you focus on your goals.</li>
-        <li><b>Vibrant Haptics</b>: Subtle feedback that makes marking a habit complete feel rewarding.</li>
-        <li><b>Light Mode Optimized</b>: A crisp, clear interface for maximum readability.</li>
-        <li><b>Liquid Glass</b>: Designed for iOS 26, Liquid Glass provides a modern, glassy interface that makes the app feel like it's part of your daily routine.</li>
+    <section class="section section-card">
+      <h2>Refined Experience</h2>
+      <ul class="bare-habits-list">
+        <li><strong>Minimalist aesthetic</strong> that keeps the focus on the habits themselves.</li>
+        <li><strong>Vibrant haptics</strong> that make completion feel satisfying without being distracting.</li>
+        <li><strong>Light-mode clarity</strong> tuned for readability and fast scanning.</li>
+        <li><strong>Liquid Glass-inspired interface</strong> designed to feel polished, modern, and calm.</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="contact-section">
+    <section class="section section-card contact-section">
       <h2>Support & Contact</h2>
-      <p>Need help or have feedback? I'd love to hear from you.</p>
+      <p>Need help, found a bug, or have feedback? Reach out directly.</p>
       <a href="mailto:paolomandica.p@gmail.com" class="btn-contact">Contact Support</a>
-      <p style="margin-top: 1rem;"><small>paolomandica.p [at] gmail [dot] com</small></p>
-    </div>
-  </div>
+      <p class="meta bare-habits-contact-email">paolomandica.p [at] gmail [dot] com</p>
+      <p class="meta"><a target="_self" href="bare-habits-privacy.html">Privacy Policy</a></p>
+    </section>
+  </main>
 
-  <footer class="section">
-    <p>&copy; 2026 Paolo Mandica. All rights reserved. | <a href="bare-habits-privacy.html">Privacy Policy</a></p>
+  <footer class="container">
+    <p>&copy; 2026 Paolo Mandica. All rights reserved.</p>
   </footer>
 </body>
 
