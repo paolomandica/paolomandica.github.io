@@ -393,9 +393,9 @@ footer {
 }
 
 .app-icon-small {
-  width: 82px;
-  height: 82px;
-  border-radius: 22px;
+  width: 105px;
+  height: 105px;
+  border-radius: 28px;
   border: 1px solid var(--line);
   box-shadow: 0 14px 28px rgba(18, 43, 77, 0.08);
   flex-shrink: 0;
@@ -559,14 +559,13 @@ footer {
   }
 
   .bare-habits-header {
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .app-icon-small {
-    width: 72px;
-    height: 72px;
-    border-radius: 19px;
+    width: 90px;
+    height: 90px;
+    border-radius: 24px;
   }
 
   .screenshot-gallery,
