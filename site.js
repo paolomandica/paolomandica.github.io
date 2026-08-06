@@ -8,13 +8,38 @@
   var navWrap = document.querySelector(".nav-wrap");
 
   if (navToggle && siteNav) {
+    var body = document.body;
+    var links = Array.prototype.slice.call(siteNav.querySelectorAll("a"));
+    var lastScrollY = 0;
+
+    function lockScroll() {
+      lastScrollY = window.scrollY;
+      body.style.top = "-" + lastScrollY + "px";
+      body.classList.add("scroll-locked");
+    }
+
+    function unlockScroll() {
+      body.classList.remove("scroll-locked");
+      body.style.top = "";
+      var html = document.documentElement;
+      var previousBehavior = html.style.scrollBehavior;
+      html.style.scrollBehavior = "auto";
+      window.scrollTo(0, lastScrollY);
+      html.style.scrollBehavior = previousBehavior;
+    }
+
     function setMenu(open) {
       siteNav.classList.toggle("open", open);
       navToggle.setAttribute("aria-expanded", open ? "true" : "false");
       navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-      var icon = navToggle.querySelector("i");
-      if (icon) {
-        icon.className = open ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+      if (open) {
+        lockScroll();
+        var target = siteNav.querySelector("a.active") || links[0];
+        if (target) {
+          target.focus();
+        }
+      } else {
+        unlockScroll();
       }
     }
 
@@ -40,6 +65,35 @@
         navToggle.focus();
       }
     });
+
+    /* Keep keyboard focus cycling inside the open menu. */
+    siteNav.addEventListener("keydown", function (event) {
+      if (event.key !== "Tab" || !siteNav.classList.contains("open") || links.length === 0) {
+        return;
+      }
+      var first = links[0];
+      var last = links[links.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    /* Close the menu if the viewport grows to desktop size. */
+    var desktopMq = window.matchMedia("(min-width: 641px)");
+    function handleDesktopChange(event) {
+      if (event.matches && siteNav.classList.contains("open")) {
+        setMenu(false);
+      }
+    }
+    if (desktopMq.addEventListener) {
+      desktopMq.addEventListener("change", handleDesktopChange);
+    } else if (desktopMq.addListener) {
+      desktopMq.addListener(handleDesktopChange);
+    }
   }
 
   /* Back to top */
