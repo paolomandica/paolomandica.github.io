@@ -1,0 +1,25 @@
+{
+  "name": "Paolo Mandica",
+  "short_name": "Paolo Mandica",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f6fa",
+  "theme_color": "#111418",
+  "icons": [
+    {
+      "src": "assets/logo-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo_400px.png",
+      "sizes": "400x400",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo_800px.png",
+      "sizes": "800x800",
+      "type": "image/png"
+    }
+  ]
+}

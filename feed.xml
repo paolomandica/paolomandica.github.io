@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Paolo Mandica — Updates</title>
+  <id>https://paolomandica.github.io/updates.html</id>
+  <link href="https://paolomandica.github.io/updates.html"/>
+  <link href="https://paolomandica.github.io/feed.xml" rel="self"/>
+  <updated>2026-06-03T00:00:00Z</updated>
+  <author>
+    <name>Paolo Mandica</name>
+  </author>
+
+  <entry>
+    <title>GPart is now open source on SamsungLabs GitHub</title>
+    <id>https://paolomandica.github.io/updates.html#2026-06-03</id>
+    <link href="https://paolomandica.github.io/updates.html"/>
+    <updated>2026-06-03T00:00:00Z</updated>
+    <summary>The code for GPart is now open source on SamsungLabs GitHub.</summary>
+  </entry>
+
+  <entry>
+    <title>GPart paper released on arXiv</title>
+    <id>https://paolomandica.github.io/updates.html#2026-05-14</id>
+    <link href="https://paolomandica.github.io/updates.html"/>
+    <updated>2026-05-14T00:00:00Z</updated>
+    <summary>"GPart: End-to-End Isometric Fine-Tuning via Global Parameter Partitioning" is out on arXiv.</summary>
+  </entry>
+
+  <entry>
+    <title>Promoted to Senior AI Research Scientist at Samsung</title>
+    <id>https://paolomandica.github.io/updates.html#2026-03-15</id>
+    <link href="https://paolomandica.github.io/updates.html"/>
+    <updated>2026-03-15T00:00:00Z</updated>
+    <summary>I was promoted to Senior AI Research Scientist in Samsung.</summary>
+  </entry>
+
+  <entry>
+    <title>Published Bare Habits on the App Store</title>
+    <id>https://paolomandica.github.io/updates.html#2026-03-02</id>
+    <link href="https://paolomandica.github.io/updates.html"/>
+    <updated>2026-03-02T00:00:00Z</updated>
+    <summary>I developed and published my first iOS app, Bare Habits, on the App Store.</summary>
+  </entry>
+
+  <entry>
+    <title>Paper accepted to EMNLP 2025 Findings</title>
+    <id>https://paolomandica.github.io/updates.html#2025-09-20</id>
+    <link href="https://paolomandica.github.io/updates.html"/>
+    <updated>2025-09-20T00:00:00Z</updated>
+    <summary>Our paper "Representation-based Broad Hallucination Detectors Fail to Generalize Out of Distribution" has been accepted to EMNLP 2025 Findings.</summary>
+  </entry>
+
+  <entry>
+    <title>SW Advanced Level Certification at Samsung</title>
+    <id>https://paolomandica.github.io/updates.html#2025-05-16</id>
+    <link href="https://paolomandica.github.io/updates.html"/>
+    <updated>2025-05-16T00:00:00Z</updated>
+    <summary>I officially passed the internal Software Engineering Test at Samsung and obtained the SW Advanced Level Certification.</summary>
+  </entry>
+
+  <entry>
+    <title>Started as AI Research Scientist at Samsung AI Center</title>
+    <id>https://paolomandica.github.io/updates.html#2025-04-04</id>
+    <link href="https://paolomandica.github.io/updates.html"/>
+    <updated>2025-04-04T00:00:00Z</updated>
+    <summary>Settled in Warsaw and officially started as an AI Research Scientist at Samsung's AI Center.</summary>
+  </entry>
+
+  <entry>
+    <title>PhD thesis defended</title>
+    <id>https://paolomandica.github.io/updates.html#2025-01-16</id>
+    <link href="https://paolomandica.github.io/updates.html"/>
+    <updated>2025-01-16T00:00:00Z</updated>
+    <summary>I successfully defended my PhD thesis. Preparing to move to Warsaw, Poland, to start at Samsung in February.</summary>
+  </entry>
+
+  <entry>
+    <title>PhD thesis submitted</title>
+    <id>https://paolomandica.github.io/updates.html#2024-11-04</id>
+    <link href="https://paolomandica.github.io/updates.html"/>
+    <updated>2024-11-04T00:00:00Z</updated>
+    <summary>I submitted my PhD thesis and it is now under external committee review.</summary>
+  </entry>
+
+  <entry>
+    <title>Hyperbolic VLMs accepted at ECCV 2024 Beyond Euclidean workshop</title>
+    <id>https://paolomandica.github.io/updates.html#2024-09-09</id>
+    <link href="https://paolomandica.github.io/updates.html"/>
+    <updated>2024-09-09T00:00:00Z</updated>
+    <summary>Our work on Hyperbolic VLMs, developed with Panasonic North America AI Lab and BAIR, was accepted at the ECCV 2024 workshop "Beyond Euclidean".</summary>
+  </entry>
+</feed>

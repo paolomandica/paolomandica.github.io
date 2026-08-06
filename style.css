@@ -4,6 +4,54 @@
    wide desktop, with an automatic dark theme.
    ============================================================ */
 
+/* ---------- Self-hosted fonts (OFL licensed, see assets/fonts) ---------- */
+
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/fonts/manrope-latin.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/fonts/manrope-latin-ext.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("assets/fonts/newsreader-latin.woff2") format("woff2");
+  font-weight: 500 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+    U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("assets/fonts/newsreader-latin-ext.woff2") format("woff2");
+  font-weight: 500 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+    U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+
 /* ---------- Design tokens ---------- */
 
 :root {
@@ -231,6 +279,10 @@ img {
   height: auto;
 }
 
+picture {
+  display: block;
+}
+
 .container {
   max-width: 1040px;
   margin: 0 auto;
@@ -256,6 +308,16 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+
+#site-nav {
+  margin-left: auto;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
 }
 
 #name {
@@ -303,7 +365,8 @@ nav a.active {
   background: var(--accent-soft);
 }
 
-.theme-toggle {
+.theme-toggle,
+.nav-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -329,6 +392,14 @@ nav a.active {
 }
 
 .theme-toggle i {
+  pointer-events: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle i {
   pointer-events: none;
 }
 
@@ -476,13 +547,40 @@ nav a.active {
   box-shadow: var(--shadow-md);
 }
 
-.paper-item img {
+.paper-thumb {
   width: 150px;
   height: 96px;
-  object-fit: cover;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--surface-tint);
+}
+
+.paper-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+  border-radius: 0;
+  transition: transform 0.4s ease;
+}
+
+.paper-thumb picture {
+  width: 100%;
+  height: 100%;
+}
+
+.paper-item:hover .paper-thumb img {
+  transform: scale(1.06);
+}
+
+.paper-heading {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .paper-title {
@@ -571,7 +669,8 @@ nav a.active {
 
 .app-entry-icon {
   width: 62px;
-  height: 62px;
+  height: auto;
+  aspect-ratio: 1;
   border-radius: 16px;
   border: 1px solid var(--line);
   box-shadow: var(--shadow-sm);
@@ -649,7 +748,8 @@ nav a.active {
 
 .app-icon-small {
   width: 105px;
-  height: 105px;
+  height: auto;
+  aspect-ratio: 1;
   border-radius: 26px;
   border: 1px solid var(--line);
   box-shadow: var(--shadow-md);
@@ -779,6 +879,179 @@ nav a.active {
   margin-top: 1.5rem;
 }
 
+/* ---------- Page headers ---------- */
+
+.page-head {
+  padding-top: clamp(1.4rem, 4vw, 2.6rem);
+}
+
+.page-head h1 {
+  margin-bottom: 0.45rem;
+}
+
+.page-lede {
+  max-width: 48rem;
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+/* ---------- Publications ---------- */
+
+.pub-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.3rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pub-toc a {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.pub-toc a:hover {
+  color: var(--accent);
+  border-color: var(--line-accent);
+  background: var(--accent-soft);
+}
+
+.year-group {
+  margin-top: 1.5rem;
+}
+
+.year-group h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+}
+
+.year-group h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.bibtex {
+  margin-top: 0.75rem;
+}
+
+.bibtex summary {
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.15s ease;
+}
+
+.bibtex summary:hover {
+  color: var(--accent);
+}
+
+.bibtex pre {
+  margin: 0.6rem 0 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface-tint);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.76rem;
+  line-height: 1.55;
+  color: var(--muted);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* ---------- Back to top ---------- */
+
+.back-to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease,
+    color 0.15s ease, border-color 0.15s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.back-to-top:hover {
+  color: var(--accent);
+  border-color: var(--line-accent);
+}
+
+/* ---------- Print ---------- */
+
+@media print {
+  @page {
+    margin: 1.4cm;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000;
+  }
+
+  .site-header,
+  footer,
+  .back-to-top,
+  .pub-toc {
+    display: none !important;
+  }
+
+  .section-card {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .paper-item {
+    break-inside: avoid;
+  }
+
+  .bibtex pre {
+    white-space: pre-wrap;
+  }
+}
+
 /* ---------- Footer ---------- */
 
 footer.container {
@@ -832,7 +1105,7 @@ footer.container {
     padding: 0.8rem;
   }
 
-  .paper-item img {
+  .paper-thumb {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
@@ -852,36 +1125,53 @@ footer.container {
 }
 
 @media (max-width: 640px) {
-  :root {
-    --nav-height: 98px;
-  }
-
   .nav-wrap {
-    flex-wrap: wrap;
-    gap: 0.35rem;
+    gap: 0.55rem;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     min-height: 0;
   }
 
-  #name {
-    flex-basis: 100%;
+  #site-nav {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    display: none;
   }
 
-  nav {
-    width: 100%;
+  #site-nav.open {
+    display: block;
+    margin-top: 0.4rem;
+    padding-top: 0.45rem;
+    border-top: 1px solid var(--line);
   }
 
-  nav ul {
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 0.2rem;
+  .nav-right {
+    margin-left: auto;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .theme-toggle,
+  .nav-toggle {
+    width: 44px;
+    height: 44px;
+    font-size: 1.05rem;
   }
 
   nav a {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.6rem;
+    display: block;
+    padding: 0.75rem 0.8rem;
+    font-size: 1rem;
+    border-radius: 12px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
   }
 
   .container {
@@ -902,12 +1192,17 @@ footer.container {
 
   .app-icon-small {
     width: 88px;
-    height: 88px;
+    height: auto;
     border-radius: 22px;
   }
 
   .bare-habits-hero .btn-contact {
     width: 100%;
+  }
+
+  .back-to-top {
+    right: 1rem;
+    bottom: 1rem;
   }
 }
 
@@ -918,17 +1213,17 @@ footer.container {
   }
 
   nav a {
-    font-size: 0.86rem;
-    padding: 0.38rem 0.52rem;
+    font-size: 0.96rem;
+    padding: 0.72rem 0.75rem;
   }
 
   .app-icon-small {
     width: 76px;
-    height: 76px;
+    height: auto;
     border-radius: 19px;
   }
 
-  .paper-item img {
+  .paper-thumb {
     border-radius: 8px;
   }
 }

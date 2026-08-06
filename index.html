@@ -5,38 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f6fa">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111418">
-  <meta name="google-site-verification" content="KvQ7QYbQZ0MPkP-7tr-qhz8H6gwbQQkS_BNjlWTR42o">
-  <base target="_blank">
   <title>Paolo Mandica | AI Research Scientist</title>
   <meta name="description" content="Paolo Mandica is a Senior AI Research Scientist and Project Leader at Samsung AI Center Warsaw, working on reliable agentic systems, fine-tuning, and large multimodal models.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Paolo Mandica">
+  <meta property="og:title" content="Paolo Mandica | AI Research Scientist">
+  <meta property="og:description" content="Senior AI Research Scientist and Project Leader at Samsung AI Center Warsaw — agentic systems, parameter-efficient fine-tuning, and reliable multimodal models.">
+  <meta property="og:url" content="https://paolomandica.github.io/">
+  <meta property="og:image" content="https://paolomandica.github.io/assets/logo_1600px.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Paolo Mandica | AI Research Scientist">
+  <meta name="twitter:description" content="Senior AI Research Scientist and Project Leader at Samsung AI Center Warsaw.">
+  <meta name="twitter:image" content="https://paolomandica.github.io/assets/logo_1600px.png">
+  <meta name="google-site-verification" content="KvQ7QYbQZ0MPkP-7tr-qhz8H6gwbQQkS_BNjlWTR42o">
+  <base target="_blank">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="icon" type="image/png" href="assets/logo_400px.png">
+  <link rel="apple-touch-icon" href="assets/logo-180.png">
+  <link rel="manifest" href="site.webmanifest">
+  <script>(function(){try{var t=localStorage.getItem("site-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Paolo Mandica",
+    "url": "https://paolomandica.github.io/",
+    "jobTitle": "Senior AI Research Scientist and Project Leader",
+    "worksFor": { "@type": "Organization", "name": "Samsung AI Center Warsaw" },
+    "email": "mailto:paolomandica.p@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/paolo-mandica/",
+      "https://scholar.google.com/citations?hl=en&user=rUZYZogAAAAJ",
+      "https://github.com/paolomandica",
+      "https://x.com/paolomandica"
+    ]
+  }
+  </script>
 </head>
 <body id="top">
   <header class="site-header">
     <div class="container nav-wrap">
       <a id="name" href="#top" target="_self">Paolo Mandica</a>
-      <nav>
+      <nav id="site-nav" aria-label="Main">
         <ul>
           <li><a class="active" target="_self" href="#top">Home</a></li>
-          <li><a target="_self" href="#research">Research</a></li>
-          <li><a target="_self" href="#extra">More</a></li>
+          <li><a target="_self" href="publications.html">Publications</a></li>
           <li><a target="_self" href="updates.html">Updates</a></li>
-          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i></button></li>
+          <li><a target="_self" href="notes.html">Notes</a></li>
         </ul>
       </nav>
+      <div class="nav-right">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i></button>
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
     </div>
   </header>
 
   <main class="container">
     <section class="section section-card about-grid" id="about_me">
       <div class="profile-block">
-        <img src="assets/profile_pic.jpg" id="profile-pic" alt="Profile picture of Paolo Mandica">
+        <picture>
+          <source srcset="assets/profile_pic-800.avif" type="image/avif">
+          <img src="assets/profile_pic-800.jpg" id="profile-pic" alt="Profile picture of Paolo Mandica" width="800" height="800">
+        </picture>
         <p class="profile-tagline">Senior AI Research Scientist<br>Project Leader, Samsung AI Center Warsaw</p>
         <div class="quick-links">
           <a href="https://www.linkedin.com/in/paolo-mandica/" class="quick-link" aria-label="LinkedIn profile">
@@ -98,18 +131,23 @@
     <section class="section section-card" id="now">
       <h2>Now</h2>
       <p class="now-highlight">
-        <b>June 3, 2026</b> - The code for GPart is now open source on <a href="https://github.com/SamsungLabs/GPart">SamsungLabs GitHub</a>.
+        <b>June 3, 2026</b> The code for GPart is now open source on <a href="https://github.com/SamsungLabs/GPart">SamsungLabs GitHub</a>.
       </p>
-      <p><a target="_self" href="updates.html">View past updates -></a></p>
+      <p><a target="_self" href="now.html">What I'm working on now -&gt;</a></p>
     </section>
 
     <section class="section section-card research" id="research">
       <h2>Research</h2>
       <ul class="paper-list">
         <li class="paper-item">
-          <img src="assets/paper-figures/gpart_fig.png" alt="Figure preview for GPart publication" loading="lazy" decoding="async">
+          <div class="paper-thumb">
+            <picture>
+              <source srcset="assets/paper-figures/gpart.avif" type="image/avif">
+              <img src="assets/paper-figures/gpart.jpg" alt="Figure preview for GPart publication" width="640" height="254" loading="lazy" decoding="async">
+            </picture>
+          </div>
           <div>
-            <a class="paper-title" href="https://arxiv.org/abs/2605.14841">GPart: End-to-End Isometric Fine-Tuning via Global Parameter Partitioning</a>
+            <h3 class="paper-heading"><a class="paper-title" href="https://arxiv.org/abs/2605.14841">GPart: End-to-End Isometric Fine-Tuning via Global Parameter Partitioning</a></h3>
             <p class="paper-authors"><em><strong>Paolo Mandica</strong>, M. Brzozowski, Z. Dubanowska, NC. Chung</em></p>
             <p class="paper-venue">Preprint 2026</p>
             <p class="paper-links">
@@ -119,9 +157,14 @@
           </div>
         </li>
         <li class="paper-item">
-          <img src="assets/paper-figures/publication-placeholder.svg" alt="Placeholder thumbnail for Representation-based hallucination publication" loading="lazy" decoding="async">
+          <div class="paper-thumb">
+            <picture>
+              <source srcset="assets/paper-figures/publication-placeholder.svg" type="image/svg+xml">
+              <img src="assets/paper-figures/publication-placeholder.svg" alt="Placeholder thumbnail for Representation-based hallucination publication" width="640" height="360" loading="lazy" decoding="async">
+            </picture>
+          </div>
           <div>
-            <a class="paper-title" href="https://arxiv.org/abs/2509.19372">Representation-based Broad Hallucination Detectors Fail to Generalize Out of Distribution</a>
+            <h3 class="paper-heading"><a class="paper-title" href="https://arxiv.org/abs/2509.19372">Representation-based Broad Hallucination Detectors Fail to Generalize Out of Distribution</a></h3>
             <p class="paper-authors">
               <em>Z. Dubanowska, M. Żelaszczyk, M. Brzozowski,
               <strong>Paolo Mandica</strong>, M. P. Karpowicz</em>
@@ -134,9 +177,14 @@
           </div>
         </li>
         <li class="paper-item">
-          <img src="assets/paper-figures/halo.png" alt="Figure preview for HALO publication" loading="lazy" decoding="async">
+          <div class="paper-thumb">
+            <picture>
+              <source srcset="assets/paper-figures/halo.avif" type="image/avif">
+              <img src="assets/paper-figures/halo.jpg" alt="Figure preview for HALO publication" width="640" height="206" loading="lazy" decoding="async">
+            </picture>
+          </div>
           <div>
-            <a class="paper-title" href="https://arxiv.org/abs/2306.11180">Hyperbolic Active Learning for Semantic Segmentation under Domain Shift</a>
+            <h3 class="paper-heading"><a class="paper-title" href="https://arxiv.org/abs/2306.11180">Hyperbolic Active Learning for Semantic Segmentation under Domain Shift</a></h3>
             <p class="paper-authors"><em>L. Franco*, <strong>Paolo Mandica</strong>*, K. Kallidromitis, YT Li, D. Guillory, T. Darrell, F. Galasso</em></p>
             <p class="paper-venue">ICML 2024</p>
             <p class="paper-links">
@@ -147,37 +195,8 @@
           </div>
         </li>
       </ul>
-      <details class="paper-archive">
-        <summary>View past papers</summary>
-        <ul class="paper-list paper-list-archive">
-          <li class="paper-item">
-            <img src="assets/paper-figures/hyperllm.png" alt="Figure preview for Hyperbolic Learning publication" loading="lazy" decoding="async">
-            <div>
-              <a class="paper-title" href="https://arxiv.org/abs/2408.05097">Hyperbolic Learning with Multimodal Large Language Models</a>
-              <p class="paper-authors"><em><strong>Paolo Mandica</strong>*, L. Franco*, K. Kallidromitis, S. Petryk, F. Galasso</em></p>
-              <p class="paper-venue">ECCV 2024 - Beyond Euclidean Workshop</p>
-              <p class="paper-links">
-                <a href="https://arxiv.org/abs/2408.05097">arXiv</a>
-                <a href="https://link.Springer.com/chapter/10.1007/978-3-031-91585-7_23">Springer</a>
-              </p>
-            </div>
-          </li>
-          <li class="paper-item">
-            <img src="assets/paper-figures/hysp.png" alt="Figure preview for HYSP publication" loading="lazy" decoding="async">
-            <div>
-              <a class="paper-title" href="https://arxiv.org/abs/2303.06242">HYSP: HYperbolic Self-Paced Learning for Self-Supervised Skeleton-based Action Representations</a>
-              <p class="paper-authors"><em>L. Franco*, <strong>Paolo Mandica</strong>*, B. Munjal, F. Galasso</em></p>
-              <p class="paper-venue">ICLR 2023</p>
-              <p class="paper-links">
-                <a href="https://arxiv.org/abs/2303.06242">arXiv</a>
-                <a href="https://openreview.net/forum?id=3Bh6sRPKS3J">OpenReview</a>
-                <a href="https://github.com/paolomandica/HYSP">GitHub</a>
-              </p>
-            </div>
-          </li>
-        </ul>
-      </details>
-      <small>* indicates equal contribution</small>
+      <p class="meta">* indicates equal contribution.</p>
+      <p><a target="_self" href="publications.html">All publications -&gt;</a></p>
     </section>
 
     <section class="section section-card" id="extra">
@@ -185,12 +204,15 @@
 
       <h3>Apps</h3>
       <div class="app-entry">
-        <img src="assets/bare-habits/app-icon.png" alt="Bare Habits app icon" class="app-entry-icon" loading="lazy" decoding="async">
+        <picture>
+          <source srcset="assets/bare-habits/app-icon-210.avif" type="image/avif">
+          <img src="assets/bare-habits/app-icon-210.jpg" alt="Bare Habits app icon" class="app-entry-icon" width="210" height="210" loading="lazy" decoding="async">
+        </picture>
         <div>
           <p class="app-entry-title"><strong>Bare Habits</strong></p>
           <p>
             A minimalist habit tracker for iOS. Focus on what matters, one day at a time.
-            <a target="_self" href="bare-habits.html">Support Page -></a>
+            <a target="_self" href="bare-habits.html">Support Page -&gt;</a>
           </p>
         </div>
       </div>
@@ -224,6 +246,9 @@
   <footer class="container">
     <p>&copy; 2026 Paolo Mandica. All rights reserved.</p>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+  <script src="site.js"></script>
   <script src="theme.js"></script>
 </body>
 </html>
