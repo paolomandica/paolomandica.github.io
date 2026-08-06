@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6fa">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111418">
   <title>Paolo's Updates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="icon" type="image/png" href="assets/logo_400px.png">
 </head>
 <body>
@@ -17,6 +22,7 @@
         <ul>
           <li><a target="_self" href="index.html">Home</a></li>
           <li><a class="active" target="_self" href="updates.html">Updates</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i></button></li>
         </ul>
       </nav>
     </div>
@@ -26,16 +32,16 @@
     <section class="section section-card" id="updates">
       <h2>Updates</h2>
       <ul>
-        <li><b>June 3, 2026</b> - The code for GPart is now open source on <a href="https://github.com/SamsungLabs/GPart">SamsungLabs GitHub</a>.</li>
-        <li><b>May 14, 2026</b> - My new paper "GPart: End-to-End Isometric Fine-Tuning via Global Parameter Partitioning" is out <a href="https://arxiv.org/abs/2605.14841">on arxiv</a>.</li>
-        <li><b>March 15, 2026</b> - I was promoted to Senior AI Research Scientist in Samsung.</li>
-        <li><b>March 2, 2026</b> - I developed and published my first iOS app, <a href="https://apps.apple.com/app/bare-habits/id6759493655">Bare Habits</a>, on the App Store.</li>
-        <li><b>September 20, 2025</b> - Our paper <a href="https://arxiv.org/abs/2509.19372">Representation-based Broad Hallucination Detectors Fail to Generalize Out of Distribution</a> has been accepted to <em>EMNLP 2025 Findings</em>.</li>
-        <li><b>May 16, 2025</b> - I officially passed the internal Software Engineering Test at Samsung and obtained the SW Advanced Level Certification.</li>
-        <li><b>April 4, 2025</b> - Settled in Warsaw and officially started as an AI Research Scientist at Samsung's AI Center.</li>
-        <li><b>January 16, 2025</b> - I successfully defended my PhD thesis. Preparing to move to Warsaw, Poland, to start at Samsung in February.</li>
-        <li><b>November 4, 2024</b> - I submitted my PhD thesis and it is now under external committee review.</li>
-        <li><b>September 9, 2024</b> - Our work on <a href="https://arxiv.org/abs/2408.05097">Hyperbolic VLMs</a>, developed with <a href="https://na.panasonic.com/us/">Panasonic North America</a> AI Lab and <a href="https://bair.berkeley.edu/">BAIR</a>, was accepted at the ECCV 2024 workshop "<a href="https://sites.google.com/view/beyondeuclidean/home">Beyond Euclidean</a>".</li>
+        <li><b>June 3, 2026</b> The code for GPart is now open source on <a href="https://github.com/SamsungLabs/GPart">SamsungLabs GitHub</a>.</li>
+        <li><b>May 14, 2026</b> My new paper "GPart: End-to-End Isometric Fine-Tuning via Global Parameter Partitioning" is out <a href="https://arxiv.org/abs/2605.14841">on arxiv</a>.</li>
+        <li><b>March 15, 2026</b> I was promoted to Senior AI Research Scientist in Samsung.</li>
+        <li><b>March 2, 2026</b> I developed and published my first iOS app, <a href="https://apps.apple.com/app/bare-habits/id6759493655">Bare Habits</a>, on the App Store.</li>
+        <li><b>September 20, 2025</b> Our paper <a href="https://arxiv.org/abs/2509.19372">Representation-based Broad Hallucination Detectors Fail to Generalize Out of Distribution</a> has been accepted to <em>EMNLP 2025 Findings</em>.</li>
+        <li><b>May 16, 2025</b> I officially passed the internal Software Engineering Test at Samsung and obtained the SW Advanced Level Certification.</li>
+        <li><b>April 4, 2025</b> Settled in Warsaw and officially started as an AI Research Scientist at Samsung's AI Center.</li>
+        <li><b>January 16, 2025</b> I successfully defended my PhD thesis. Preparing to move to Warsaw, Poland, to start at Samsung in February.</li>
+        <li><b>November 4, 2024</b> I submitted my PhD thesis and it is now under external committee review.</li>
+        <li><b>September 9, 2024</b> Our work on <a href="https://arxiv.org/abs/2408.05097">Hyperbolic VLMs</a>, developed with <a href="https://na.panasonic.com/us/">Panasonic North America</a> AI Lab and <a href="https://bair.berkeley.edu/">BAIR</a>, was accepted at the ECCV 2024 workshop "<a href="https://sites.google.com/view/beyondeuclidean/home">Beyond Euclidean</a>".</li>
       </ul>
     </section>
   </main>
@@ -43,5 +49,6 @@
   <footer class="container">
     <p>&copy; 2026 Paolo Mandica. All rights reserved.</p>
   </footer>
+  <script src="theme.js"></script>
 </body>
 </html>

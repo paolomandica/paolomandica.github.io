@@ -4,10 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6fa">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111418">
   <title>Bare Habits Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="icon" type="image/png" href="assets/bare-habits/app-icon.png">
 </head>
 
@@ -19,6 +24,7 @@
         <ul>
           <li><a target="_self" href="index.html">Home</a></li>
           <li><a target="_self" href="updates.html">Updates</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i></button></li>
         </ul>
       </nav>
     </div>
@@ -44,10 +50,10 @@
         </a>
       </div>
       <div class="screenshot-gallery" aria-label="Bare Habits screenshots">
-        <img src="assets/bare-habits/Frame 1.png" alt="Bare Habits daily tracking screen">
-        <img src="assets/bare-habits/Frame 2.png" alt="Bare Habits weekly overview screen">
-        <img src="assets/bare-habits/Frame 3.png" alt="Bare Habits habit details screen">
-        <img src="assets/bare-habits/Frame 4.png" alt="Bare Habits settings and reminders screen">
+        <img src="assets/bare-habits/Frame 1.png" alt="Bare Habits daily tracking screen" width="1284" height="2778" loading="lazy" decoding="async">
+        <img src="assets/bare-habits/Frame 2.png" alt="Bare Habits weekly overview screen" width="1284" height="2778" loading="lazy" decoding="async">
+        <img src="assets/bare-habits/Frame 3.png" alt="Bare Habits habit details screen" width="1284" height="2778" loading="lazy" decoding="async">
+        <img src="assets/bare-habits/Frame 4.png" alt="Bare Habits settings and reminders screen" width="1284" height="2778" loading="lazy" decoding="async">
       </div>
     </section>
 
@@ -74,9 +80,8 @@
       </article>
       <article class="section-card feature-item">
         <h3>🎙️ Siri Integration</h3>
-        <p>Track your habits completely hands-free. Check off your habits by voice with Siri voice commands.<br>
-          <blockquote><q>Hey Siri, complete reading in Bare Habits</q></blockquote>
-        </p>
+        <p>Track your habits completely hands-free. Check off your habits by voice with Siri voice commands.</p>
+        <blockquote><q>Hey Siri, complete reading in Bare Habits</q></blockquote>
       </article>
     </section>
 
@@ -103,6 +108,7 @@
   <footer class="container">
     <p>&copy; 2026 Paolo Mandica. All rights reserved.</p>
   </footer>
+  <script src="theme.js"></script>
 </body>
 
 </html>

@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6fa">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111418">
   <meta name="google-site-verification" content="KvQ7QYbQZ0MPkP-7tr-qhz8H6gwbQQkS_BNjlWTR42o">
-  <base target="_blank" rel="noopener noreferrer">
+  <base target="_blank">
   <title>Paolo Mandica | AI Research Scientist</title>
   <meta name="description" content="Paolo Mandica is a Senior AI Research Scientist and Project Leader at Samsung AI Center Warsaw, working on reliable agentic systems, fine-tuning, and large multimodal models.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="icon" type="image/png" href="assets/logo_400px.png">
 </head>
 <body id="top">
@@ -19,9 +24,10 @@
       <nav>
         <ul>
           <li><a class="active" target="_self" href="#top">Home</a></li>
-          <li class="desktop-only"><a target="_self" href="#research">Research</a></li>
-          <li class="desktop-only"><a target="_self" href="#extra">More</a></li>
+          <li><a target="_self" href="#research">Research</a></li>
+          <li><a target="_self" href="#extra">More</a></li>
           <li><a target="_self" href="updates.html">Updates</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch color theme"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i></button></li>
         </ul>
       </nav>
     </div>
@@ -101,7 +107,7 @@
       <h2>Research</h2>
       <ul class="paper-list">
         <li class="paper-item">
-          <img src="assets/paper-figures/gpart_fig.png" alt="Figure preview for GPart publication">
+          <img src="assets/paper-figures/gpart_fig.png" alt="Figure preview for GPart publication" loading="lazy" decoding="async">
           <div>
             <a class="paper-title" href="https://arxiv.org/abs/2605.14841">GPart: End-to-End Isometric Fine-Tuning via Global Parameter Partitioning</a>
             <p class="paper-authors"><em><strong>Paolo Mandica</strong>, M. Brzozowski, Z. Dubanowska, NC. Chung</em></p>
@@ -113,7 +119,7 @@
           </div>
         </li>
         <li class="paper-item">
-          <img src="assets/paper-figures/publication-placeholder.svg" alt="Placeholder thumbnail for Representation-based hallucination publication">
+          <img src="assets/paper-figures/publication-placeholder.svg" alt="Placeholder thumbnail for Representation-based hallucination publication" loading="lazy" decoding="async">
           <div>
             <a class="paper-title" href="https://arxiv.org/abs/2509.19372">Representation-based Broad Hallucination Detectors Fail to Generalize Out of Distribution</a>
             <p class="paper-authors">
@@ -128,7 +134,7 @@
           </div>
         </li>
         <li class="paper-item">
-          <img src="assets/paper-figures/halo.png" alt="Figure preview for HALO publication">
+          <img src="assets/paper-figures/halo.png" alt="Figure preview for HALO publication" loading="lazy" decoding="async">
           <div>
             <a class="paper-title" href="https://arxiv.org/abs/2306.11180">Hyperbolic Active Learning for Semantic Segmentation under Domain Shift</a>
             <p class="paper-authors"><em>L. Franco*, <strong>Paolo Mandica</strong>*, K. Kallidromitis, YT Li, D. Guillory, T. Darrell, F. Galasso</em></p>
@@ -145,7 +151,7 @@
         <summary>View past papers</summary>
         <ul class="paper-list paper-list-archive">
           <li class="paper-item">
-            <img src="assets/paper-figures/hyperllm.png" alt="Figure preview for Hyperbolic Learning publication">
+            <img src="assets/paper-figures/hyperllm.png" alt="Figure preview for Hyperbolic Learning publication" loading="lazy" decoding="async">
             <div>
               <a class="paper-title" href="https://arxiv.org/abs/2408.05097">Hyperbolic Learning with Multimodal Large Language Models</a>
               <p class="paper-authors"><em><strong>Paolo Mandica</strong>*, L. Franco*, K. Kallidromitis, S. Petryk, F. Galasso</em></p>
@@ -157,7 +163,7 @@
             </div>
           </li>
           <li class="paper-item">
-            <img src="assets/paper-figures/hysp.png" alt="Figure preview for HYSP publication">
+            <img src="assets/paper-figures/hysp.png" alt="Figure preview for HYSP publication" loading="lazy" decoding="async">
             <div>
               <a class="paper-title" href="https://arxiv.org/abs/2303.06242">HYSP: HYperbolic Self-Paced Learning for Self-Supervised Skeleton-based Action Representations</a>
               <p class="paper-authors"><em>L. Franco*, <strong>Paolo Mandica</strong>*, B. Munjal, F. Galasso</em></p>
@@ -179,7 +185,7 @@
 
       <h3>Apps</h3>
       <div class="app-entry">
-        <img src="assets/bare-habits/app-icon.png" alt="Bare Habits app icon" class="app-entry-icon">
+        <img src="assets/bare-habits/app-icon.png" alt="Bare Habits app icon" class="app-entry-icon" loading="lazy" decoding="async">
         <div>
           <p class="app-entry-title"><strong>Bare Habits</strong></p>
           <p>
@@ -218,5 +224,6 @@
   <footer class="container">
     <p>&copy; 2026 Paolo Mandica. All rights reserved.</p>
   </footer>
+  <script src="theme.js"></script>
 </body>
 </html>
