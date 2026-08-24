@@ -7,8 +7,8 @@
 /* ---------- Self-hosted fonts (OFL licensed, see assets/fonts) ---------- */
 
 @font-face {
-  font-family: "Manrope";
-  src: url("assets/fonts/manrope-latin.woff2") format("woff2");
+  font-family: "Geist";
+  src: url("assets/fonts/geist-latin.woff2") format("woff2");
   font-weight: 400 800;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 }
 
 @font-face {
-  font-family: "Manrope";
-  src: url("assets/fonts/manrope-latin-ext.woff2") format("woff2");
+  font-family: "Geist";
+  src: url("assets/fonts/geist-latin-ext.woff2") format("woff2");
   font-weight: 400 800;
   font-style: normal;
   font-display: swap;
@@ -92,7 +92,7 @@
   --radius-sm: 10px;
   --radius-md: 14px;
   --radius-lg: 18px;
-  --font-sans: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-sans: "Geist", "Segoe UI", system-ui, -apple-system, sans-serif;
   --font-serif: "Newsreader", "Iowan Old Style", Georgia, serif;
 
   --nav-height: 68px;
