@@ -556,14 +556,14 @@ body.scroll-locked {
   font-size: 0.9rem;
 }
 
-.now-highlight {
+.updates-highlight {
   padding: 0.85rem 1rem;
   border-left: 3px solid var(--accent);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   background: var(--accent-tint);
 }
 
-.now-highlight b {
+.updates-highlight b {
   color: var(--accent);
   font-weight: 800;
 }
@@ -701,33 +701,6 @@ body.scroll-locked {
 
 .paper-list-archive {
   margin-top: 0;
-}
-
-/* ---------- Apps / misc sections ---------- */
-
-.app-entry {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 0 0 1.2rem;
-  padding: 1rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  background: var(--surface-tint);
-}
-
-.app-entry-icon {
-  width: 62px;
-  height: auto;
-  aspect-ratio: 1;
-  border-radius: 16px;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-sm);
-  flex-shrink: 0;
-}
-
-.app-entry-title {
-  margin-bottom: 0.25rem;
 }
 
 /* ---------- Updates ---------- */
@@ -1162,10 +1135,6 @@ footer.container {
 
   .feature-grid {
     grid-template-columns: 1fr;
-  }
-
-  .app-entry {
-    align-items: flex-start;
   }
 
   footer.container {
