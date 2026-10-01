@@ -3,7 +3,7 @@
   "short_name": "Paolo Mandica",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#faf7ee",
+  "background_color": "#fcfaf5",
   "theme_color": "#1a1814",
   "icons": [
     {
