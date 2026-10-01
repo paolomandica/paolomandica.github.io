@@ -6,8 +6,8 @@
 
   var root = document.documentElement;
   var STORAGE_KEY = "site-theme";
-  var LIGHT_BG = "#f4f6fa";
-  var DARK_BG = "#111418";
+  var LIGHT_BG = "#f5f1e7";
+  var DARK_BG = "#1a1814";
 
   function systemPrefersDark() {
     return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
