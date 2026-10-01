@@ -6,7 +6,7 @@
 
   var root = document.documentElement;
   var STORAGE_KEY = "site-theme";
-  var LIGHT_BG = "#fcfaf5";
+  var LIGHT_BG = "#faf7ee";
   var DARK_BG = "#1a1814";
 
   function systemPrefersDark() {

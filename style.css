@@ -44,8 +44,8 @@
   color-scheme: light;
 
   /* surfaces (paper) */
-  --bg: #fcfaf5;
-  --surface: #fcfaf5;
+  --bg: #faf7ee;
+  --surface: #faf7ee;
   --surface-tint: #f6f2ea;
 
   /* ink */
@@ -66,7 +66,7 @@
   --line-accent: rgba(13, 107, 76, 0.4);
 
   /* chrome */
-  --header-bg: #fcfaf5;
+  --header-bg: #faf7ee;
 
   /* the paper tooth: desaturated fractal noise, tiled */
   --paper-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)' opacity='0.05'/%3E%3C/svg%3E");
